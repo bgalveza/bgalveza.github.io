@@ -1,0 +1,63 @@
+/* Minimal, single‑column, type‑first site. Original code. */
+:root{
+  --bg:#0b0b0b;
+  --fg:#ededed;
+  --muted:#b9b9b9;
+  --link:#ffffff;
+  --border:#1a1a1a;
+  --maxw:740px;
+  --leading:1.65;
+  --space:28px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font:16px/var(--leading) ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:24px 16px 56px}
+.site-header{padding:20px 0 8px}
+.name{margin:0 0 8px;font-weight:800;letter-spacing:-.02em}
+.intro{max-width:70ch}
+.intro a{color:var(--link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+
+.section{padding:var(--space) 0;border-top:1px solid var(--border)}
+.section:first-of-type{border-top:0}
+
+.eyebrow{
+  font-size:.9rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0 0 12px;
+}
+
+.item{margin:14px 0}
+.item-link{display:inline-block;color:var(--link);text-decoration:none;font-weight:600}
+.item-link:hover{text-decoration:underline;text-underline-offset:3px}
+.num{display:inline-block;width:2.6ch;color:var(--muted);font-weight:500}
+.desc{margin:.25rem 0 0;color:var(--muted)}
+
+.more{margin-top:8px}
+.more a{color:var(--link);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px}
+.more a:hover{border-bottom-color:var(--fg)}
+
+.links{list-style:none;margin:0;padding:0}
+.links li{margin:8px 0}
+.links a{color:var(--link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.muted{color:var(--muted);margin-left:6px;font-size:.95em}
+
+.recog{margin:16px 0}
+.recog-title{margin:6px 0;color:var(--fg);font-weight:600}
+
+.contact{display:flex;flex-wrap:wrap;gap:14px;margin:0}
+.contact a{color:var(--link);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px}
+.contact a:hover{border-bottom-color:var(--fg)}
+
+.site-footer{border-top:1px solid var(--border);margin-top:var(--space);padding-top:12px;color:var(--muted);font-size:.95rem}
