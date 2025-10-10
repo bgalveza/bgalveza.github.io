@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Designer & Engineer</title>
+  <meta name="description" content="Designer & engineer crafting minimal, fast websites and interactive experiences.">
+  <meta property="og:title" content="Your Name — Designer & Engineer">
+  <meta property="og:description" content="Designer & engineer crafting minimal, fast websites and interactive experiences.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="logo" href="/">Your Name</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>I’m a <span class="accent">Designer & Engineer</span> who enjoys minimal interfaces and small delightful details.</h1>
+      <p class="lede">
+        I build fast, accessible websites and interactive experiments. Currently open to collaborations.
+      </p>
+      <div class="meta">
+        <span>Based in Your City</span>
+        <span>Available for freelance</span>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Selected Work</h2>
+      <div class="grid">
+        <a class="card" href="work.html#project-1">
+          <div class="thumb" role="img" aria-label="Project 1 preview"></div>
+          <div class="card-body">
+            <span class="kicker">01</span>
+            <h3>Fintech Marketing Site</h3>
+            <p>Design & implementation of a high‑performance marketing site.</p>
+          </div>
+        </a>
+        <a class="card" href="work.html#project-2">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <span class="kicker">02</span>
+            <h3>Internal Search Tool</h3>
+            <p>AI‑powered search across docs, chats and tickets.</p>
+          </div>
+        </a>
+        <a class="card" href="work.html#project-3">
+          <div class="thumb"></div>
+          <div class="card-body">
+            <span class="kicker">03</span>
+            <h3>Daily Word Game</h3>
+            <p>A tiny game with two hints and one five‑letter answer.</p>
+          </div>
+        </a>
+      </div>
+      <p class="more"><a href="work.html">View more →</a></p>
+    </section>
+
+    <section class="section container">
+      <h2 class="section-title">Recognitions</h2>
+      <ul class="recognitions">
+        <li><strong>Site of the Day</strong> — Minimal Portfolio</li>
+        <li><strong>Feature</strong> — Design Magazine</li>
+        <li><strong>Showcase</strong> — Type & Web</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Get in touch</h2>
+      <p>Want to collaborate? <a href="mailto:you@example.com">Email me</a> or say hi on <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Your Name. Built with plain HTML/CSS/JS. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
