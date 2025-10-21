@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruno Galvez Araneda — Home</title>
+  <meta name="description" content="Portfolio of bruno galvez — PhD student. Selected papers, notes, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="home">
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="brand active" href="index.html">phd student</a>
+        <a href="papers.html">Papers</a>
+        <a href="about.html">About</a>
+        <a href="misc.html">Misc</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="monogram" href="index.html" aria-label="Home">Λ</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="edge">
+        <h1 id="hero-title">Bruno Galvez Araneda</h1>
+        <p class="tag">Minimal archive of selected papers & notes.</p>
+      </div>
+      <figure class="hero-figure full-bleed">
+        <img src="assets/hero.jpg" alt="Silhouette at a desk before a window" />
+      </figure>
+      <figcaption class="caption edge">
+        <span> </span>
+        <span>Caption — self-portrait, 2025.</span>
+      </figcaption>
+    </section>
+  </main>
+  <footer>
+    <div>© <span id="year"></span> bruno galvez. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
