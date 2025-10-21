@@ -6,7 +6,7 @@
   --maxw:920px;
 
   /* Degular from Adobe Fonts kit (family name must match your kit's CSS) */
-  --font: "Montserrat Alternates", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --font: "Questrial", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Helvetica, Arial, sans-serif;
 
 }
@@ -16,11 +16,11 @@ body{
   color:var(--fg);
   font-family: var(--font);
   font-style: normal;
-  font-weight: 400;   /* 300 = lighter, 400 = regular */
-  line-height:1.6;
-  font-size:18px;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  font-weight: 400;   /* Questrial only ships 400 */
+  line-height: 1.6;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Titles heavier */
@@ -28,7 +28,17 @@ body{
 .home .hero h1,
 section h2{
   font-family: var(--font);
-  font-weight: 700;
+  font-weight: 400;         /* Questrial has only 400 */
+  letter-spacing: 0.2px;    /* optional: subtle emphasis */
+}
+.home .hero h1{
+  font-size: 48px;     /* was 46px; adjust to taste */
+  letter-spacing: 0.3px;
+}
+
+.section-title{
+  font-size: 32px;     /* was 30px */
+  letter-spacing: 0.2px;
 }
 
 /* Base */
