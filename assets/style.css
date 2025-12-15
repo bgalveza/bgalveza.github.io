@@ -58,32 +58,48 @@ body{
 a{color:var(--link); text-decoration:none; border-bottom:2px solid transparent; padding-bottom:2px}
 a:hover{border-color:currentColor}
 
-/* Header / Top bar (full width) */
-header{position:relative; background:var(--bg); border-bottom:1px solid transparent}
-.nav{width:100%; margin:0; display:flex; align-items:center; justify-content:space-between; padding:14px 24px}
-.nav-left{display:flex; align-items:center; gap:36px}
-.brand{font-size:22px; letter-spacing:.2px} /* keep weight from titles rule */
-.monogram{font-weight:700}
-.nav a.active{border-color:currentColor}
-
-/* Monogram image */
-.monogram{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding: 2px;               /* keeps it clickable */
+header {
+  position: relative;
+  background: var(--bg);
+  border-bottom: 1px solid transparent;
 }
 
-.monogram img{
-  display:block;
-  height:22px;                /* adjust to taste: 20–28px usually fits */
-  width:auto;                 /* keep aspect ratio */
-  image-rendering:auto;       /* crisp on HiDPI */
+/* 1. Container: Increase padding so the big logo fits comfortably */
+.nav {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 40px; /* Increased from 14px 24px */
 }
 
-/* remove this if present; it's for text, not images */
-/* .monogram{ letter-spacing:.12em } */
+/* 2. Layout: Align logo and links */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Increased gap between logo and "Papers" */
+}
 
+/* 3. LOGO IMAGE: Set to 85px (Big) */
+.brand-logo img {
+  display: block;
+  height: 205px;       /* This controls the logo size directly */
+  width: auto;
+  margin-right: 10px;
+}
+
+/* 4. LINK TEXT: Set to 24px (Big) */
+/* Targets 'Papers', 'About', etc., but excludes the logo image itself */
+.nav-left a:not(.brand-logo) {
+  font-size: 24px;    /* Increased from standard 18px */
+  font-weight: 500;   /* Slightly thicker to match the size */
+}
+
+/* Active link styling */
+.nav a.active {
+  border-color: currentColor;
+}
 /* Layout */
 main{max-width:var(--maxw); margin:56px auto 60px; padding:0 20px}
 
