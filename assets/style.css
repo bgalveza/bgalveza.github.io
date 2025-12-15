@@ -215,3 +215,35 @@ p a {
     bottom: auto;
   }
 }
+/* --- RESEARCH PAGE STYLES --- */
+
+/* Add space between the different sections */
+.text-section {
+  margin-bottom: 50px;
+}
+
+/* Style the lists (Publications, etc.) */
+.simple-list {
+  list-style: none; /* Removes default dots */
+  padding: 0;
+  margin: 0;
+}
+
+.simple-list li {
+  margin-bottom: 14px; /* Space between items */
+  line-height: 1.6;
+}
+
+/* Optional: Make the paper titles bold or stand out */
+.simple-list strong {
+  font-weight: 600;
+}
+
+/* Ensure links in lists are visible (using the color we set earlier) */
+.simple-list a {
+  color: #2563eb; /* Or your chosen Teal color */
+  text-decoration: none;
+}
+.simple-list a:hover {
+  text-decoration: underline;
+}
