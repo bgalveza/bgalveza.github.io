@@ -109,7 +109,7 @@ main{max-width:var(--maxw); margin:56px auto 60px; padding:0 20px}
 .hero h1{font-weight:700; font-size:46px; line-height:1.15; margin:0 0 14px}
 .tag{color:var(--muted); margin:0 0 26px; font-weight:300}
 .hero-figure{display:flex; justify-content:center}
-.hero-figure img{max-width:min(760px, 92vw); height:auto; display:block; object-fit:cover; border:1px solid #e5e7eb; box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero-figure img{max-width:min(550px, 92vw); height:auto; display:block; object-fit:cover; border:1px solid #e5e7eb; box-shadow:0 10px 30px rgba(0,0,0,.06)}
 .caption{color:var(--muted); font-size:14px; margin-top:8px; text-align:center}
 
 /* Cards / Grid */
