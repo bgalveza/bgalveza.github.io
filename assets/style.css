@@ -100,11 +100,11 @@ main{max-width:var(--maxw); margin:56px auto 60px; padding:0 20px}
 .card{border:1px solid #eee; padding:12px; transition:transform .15s ease, box-shadow .15s ease}
 .card:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.06)}
 .thumb{aspect-ratio: 4 / 3; width:100%; background:#f6f6f6; display:block; object-fit:cover}
-.card h3{font-size:18px; margin:10px 0 4px}
+.card h3{font-size:22px; margin:10px 0 4px}
 .meta{color:var(--muted); font-size:14px}
 
 /* Sections */
-.section-title{font-weight:700; font-size:30px; margin:0 0 10px}
+.section-title{font-weight:700; font-size:45px; margin:0 0 10px}
 .sub{color:var(--muted); margin:0 0 28px; font-size:16px}
 
 /* Footer */
