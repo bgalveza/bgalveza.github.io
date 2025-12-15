@@ -93,8 +93,8 @@ header {
 /* 4. LINK TEXT: Set to 24px (Big) */
 /* Targets 'Papers', 'About', etc., but excludes the logo image itself */
 .nav-left a:not(.brand-logo) {
-  font-size: 30px;    /* Increased from standard 18px */
-  font-weight: 400;   /* Slightly thicker to match the size */
+  font-size: 27px;    /* Increased from standard 18px */
+  font-weight: 500;   /* Slightly thicker to match the size */
 }
 
 /* Active link styling */
@@ -109,7 +109,7 @@ main{max-width:var(--maxw); margin:56px auto 60px; padding:0 20px}
 .hero h1{font-weight:700; font-size:46px; line-height:1.15; margin:0 0 14px}
 .tag{color:var(--muted); margin:0 0 26px; font-weight:300}
 .hero-figure{display:flex; justify-content:center}
-.hero-figure img{max-width:min(550px, 92vw); height:auto; display:block; object-fit:cover; border:1px solid #e5e7eb; box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero-figure img{max-width:min(650px, 92vw); height:auto; display:block; object-fit:cover; border:1px solid #e5e7eb; box-shadow:0 10px 30px rgba(0,0,0,.06)}
 .caption{color:var(--muted); font-size:14px; margin-top:8px; text-align:center}
 
 /* Cards / Grid */
@@ -125,8 +125,22 @@ main{max-width:var(--maxw); margin:56px auto 60px; padding:0 20px}
 .sub{color:var(--muted); margin:0 0 28px; font-size:16px}
 
 /* Footer */
-footer{max-width:var(--maxw); margin:0 auto 60px; padding:0 20px; color:var(--muted); font-size:14px}
-.center{text-align:center}
+footer {
+  /* Fix position relative to the screen */
+  position: fixed;
+  left: 40px;      /* Matches the padding of your top bar */
+  bottom: 30px;    /* Distance from the bottom edge */
+  
+  /* Remove the old centering styles */
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  
+  /* Text styling */
+  color: var(--muted);
+  font-size: 14px;
+  z-index: 10;     /* Ensures it sits above other subtle elements */
+}
 
 /* Titles (force heavier weight across site) */
 .brand,
