@@ -51,7 +51,7 @@ body{
   font-style: normal;      /* Adobe snippet */
   font-weight: 200;        /* Thin/ExtraLight (adjust if your kit lacks 200) */
   line-height:1.6;
-  font-size:18px;
+  font-size:20px;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
@@ -69,9 +69,14 @@ header {
   width: 100%;
   margin: 0;
   display: flex;
-  align-items: center;
+  
+  /* 1. ALIGNMENT: Stick items to the top edge */
+  align-items: flex-start; 
   justify-content: space-between;
-  padding: 22px 40px; /* Increased from 14px 24px */
+  
+  /* 2. PADDING: 0px at the top */
+  /* Format: Top | Right | Bottom | Left */
+  padding: 10px 40px 20px 40px; 
 }
 
 /* 2. Layout: Align logo and links */
@@ -84,16 +89,17 @@ header {
 /* 3. LOGO IMAGE: Set to 85px (Big) */
 .brand-logo img {
   display: block;
-  height: 95px;       /* This controls the logo size directly */
+  height: 65px;       /* This controls the logo size directly */
   width: auto;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-top: 0px;
   filter: grayscale(100%) contrast(150%) brightness(110%);
 }
 
 /* 4. LINK TEXT: Set to 24px (Big) */
 /* Targets 'Papers', 'About', etc., but excludes the logo image itself */
 .nav-left a:not(.brand-logo) {
-  font-size: 27px;    /* Increased from standard 18px */
+  font-size: 18px;    /* Increased from standard 18px */
   font-weight: 500;   /* Slightly thicker to match the size */
 }
 
@@ -109,7 +115,7 @@ main{max-width:var(--maxw); margin:56px auto 60px; padding:0 20px}
 .hero h1{font-weight:700; font-size:46px; line-height:1.15; margin:0 0 14px}
 .tag{color:var(--muted); margin:0 0 26px; font-weight:300}
 .hero-figure{display:flex; justify-content:center}
-.hero-figure img{max-width:min(650px, 92vw); height:auto; display:block; object-fit:cover; border:1px solid #e5e7eb; box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.hero-figure img{max-width:min(750px, 92vw); height:auto; display:block; object-fit:cover; border:1px solid #e5e7eb; box-shadow:0 10px 30px rgba(0,0,0,.06)}
 .caption{color:var(--muted); font-size:14px; margin-top:8px; text-align:center}
 
 /* Cards / Grid */
