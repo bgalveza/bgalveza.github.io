@@ -164,3 +164,54 @@ section h2{
   .grid{grid-template-columns: 1fr}
   .hero h1{font-size:36px}
 }
+p a {
+  color: #2563eb;          /* A clear, professional blue */
+  text-decoration: underline; /* Adds an underline to make it even more obvious */
+  text-underline-offset: 4px; /* Adds a little space between text and line */
+}
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 700px) {
+
+  /* 1. HEADER: Stack items vertically */
+  .nav {
+    flex-direction: column;   /* Stack logo on top, links below */
+    padding: 15px;            /* Reduce padding to save space */
+    align-items: center;      /* Center everything */
+  }
+
+  /* 2. LOGO: Make it smaller for phones */
+  .brand-logo img {
+    height: 60px;             /* Smaller height (was 85px) */
+    margin-right: 0;          /* Remove side margin since it's centered */
+    margin-bottom: 15px;      /* Add space between logo and links */
+  }
+
+  /* 3. LINKS: Arrange them in a smaller, scrollable row or wrapped */
+  .nav-left {
+    width: 100%;
+    justify-content: center;  /* Center the links */
+    flex-wrap: wrap;          /* Allow links to wrap to two lines if needed */
+    gap: 20px;                /* Smaller gap between words */
+  }
+
+  /* 4. TEXT SIZE: Reduce font size for links */
+  .nav-left a:not(.brand-logo) {
+    font-size: 18px;          /* Readable size, but not huge (was 24px) */
+  }
+
+  /* 5. MAIN CONTENT: Ensure text doesn't hit the screen edges */
+  main {
+    padding: 0 20px;          /* Add breathing room on sides */
+    margin-top: 30px;         /* Less gap at top */
+  }
+
+  /* 6. FOOTER: Un-pin it */
+  /* On phones, fixed footers can block content. This puts it at the bottom of the scroll. */
+  footer {
+    position: static;         /* No longer fixed to corner */
+    text-align: center;       /* Center the text */
+    margin: 40px auto 20px;   /* Add margin to separate from content */
+    left: auto;
+    bottom: auto;
+  }
+}
