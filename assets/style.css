@@ -84,16 +84,17 @@ header {
 /* 3. LOGO IMAGE: Set to 85px (Big) */
 .brand-logo img {
   display: block;
-  height: 205px;       /* This controls the logo size directly */
+  height: 95px;       /* This controls the logo size directly */
   width: auto;
   margin-right: 10px;
+  filter: grayscale(100%) contrast(150%) brightness(110%);
 }
 
 /* 4. LINK TEXT: Set to 24px (Big) */
 /* Targets 'Papers', 'About', etc., but excludes the logo image itself */
 .nav-left a:not(.brand-logo) {
-  font-size: 24px;    /* Increased from standard 18px */
-  font-weight: 500;   /* Slightly thicker to match the size */
+  font-size: 30px;    /* Increased from standard 18px */
+  font-weight: 400;   /* Slightly thicker to match the size */
 }
 
 /* Active link styling */
